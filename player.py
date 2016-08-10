@@ -1,6 +1,6 @@
 import tkinter as tk
 import time
-from Weapon import Weapon
+from Weapon import *
 from Move import Sprite
 
 class Player(Sprite):
@@ -18,7 +18,7 @@ class Player(Sprite):
         self.canvas.bind("<KeyRelease-Down>",self.key_released_down)
         self.health = 10
         self.hit = 0
-        self.weapon = Weapon(self.canvas, self.x, self.y)
+        self.weapon = PlayerWeapon(self.canvas, self.x, self.y)
 
     def update(self):
         self.health -= self.hit
@@ -35,7 +35,7 @@ class Player(Sprite):
 
     def collision_detection(self):
         tags = self.get_colliding_tags()
-        print(tags)
+        #print(tags)
 
     
     # Movement bindings with a sort of linked list principle, where

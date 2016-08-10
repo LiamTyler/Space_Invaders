@@ -2,7 +2,7 @@ import tkinter as tk
 import time
 
 from player import Player
-from Weapon import Weapon, Bullet
+from Weapon import *
 
 class Game:
     def __init__(self):
