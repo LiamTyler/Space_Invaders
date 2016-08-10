@@ -1,3 +1,5 @@
+# Done in December 2014
+
 from tkinter import *
 import time
 import random
