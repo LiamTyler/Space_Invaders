@@ -4,7 +4,7 @@ from Weapon import *
 from Move import Sprite
 
 class Player(Sprite):
-    def __init__(self, root, canvas, x = 300, y = 50, speed = 5,
+    def __init__(self, root, canvas, x = 300, y = 550, speed = 5,
                  vel_x = [0,0], vel_y = [0,0], photo = 'img/gif/ship.gif'):
         super().__init__(root, canvas, x, y, speed, vel_x, vel_y, photo)
         # Bind the movement keys + releases

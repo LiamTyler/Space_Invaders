@@ -23,4 +23,4 @@ class Game:
         self.player_1.collision_detection()
         self.root.after(1000 // self.FPS, self.update)
 
-Game()
+game = Game()
