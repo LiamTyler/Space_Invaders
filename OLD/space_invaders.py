@@ -55,7 +55,7 @@ class PlayerGroup:
                                     font=('Calibri',30), tags='canvas')
             self.players.append(Player(self.canvas,(400,773),
                                 ('Left','Right','Up','Down','Control_R'),(0,800),
-                                (650,850),10,10,'ship1.gif',('player','p1')))
+                                (650,850),10,10,'../img/gif/ship1.gif',('player','p1')))
             self.canvas.create_text(600,25,text='P2 Health: ',fill='white',
                                     font=('Calibri',30), tags='canvas')
             self.players.append(Player(self.canvas,(600,773),
